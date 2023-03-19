@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:layout_margin="10dp"
+        android:background="#673AB7"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:text="Payment Screen"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white">
+
+        </TextView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp">
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:hint="UPI"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"></EditText>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_margin="20dp">
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:hint="credit/Debit/ATM card"
+                android:inputType="number"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"></EditText>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_margin="20dp">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:text="Cash on Delivery"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"></TextView>
+        </androidx.cardview.widget.CardView>
+
+
+<androidx.cardview.widget.CardView
+    android:layout_width="290dp"
+    android:layout_height="150dp"
+    android:layout_marginLeft="20dp"
+    app:cardCornerRadius="20sp"
+    android:layout_marginTop="20dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="20dp"
+            android:text=" Price details"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            ></TextView>
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="30dp" android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:text="Total price"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:textStyle="bold"></TextView>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="   $ 000.00"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                ></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:text="Delievery fee"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:textStyle="bold"></TextView>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="$ 000.00"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                ></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:text="Amount payable"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:textStyle="bold"></TextView>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="$ 000.00"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                ></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="70dp"
+            android:text="Continue"
+            android:id="@+id/btnctnpsc"
+            android:backgroundTint="#FF5722"></Button>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
