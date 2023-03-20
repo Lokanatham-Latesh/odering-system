@@ -5,7 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/white">
+    android:background="#2FD0DDDF">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/gradient"></LinearLayout>
 
     <LinearLayout
         android:id="@+id/lls"
@@ -16,7 +20,7 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:orientation="vertical"
-        android:background="@color/black"
+
         app:layout_constraintBottom_toBottomOf="parent">
 
         <SearchView
@@ -82,8 +86,8 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="110dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     app:cardCornerRadius="20sp"
                     app:cardBackgroundColor="@color/teal_200">
 
@@ -93,21 +97,22 @@
 
                         <Button
                             android:id="@+id/cart"
-                            android:layout_width="75dp"
+                            android:layout_width="73dp"
                             android:layout_height="50dp"
-                            android:layout_marginLeft="220dp"
-                            android:layout_marginRight="50dp"
+                            android:layout_marginLeft="225dp"
+                            android:layout_marginRight="30dp"
+                            android:backgroundTint="#C13045B8"
                             android:text="Cart"></Button>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="52dp"
-                        android:layout_marginTop="60dp"
+                        android:layout_marginTop="50dp"
                         android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="120dp"
+                            android:layout_width="80dp"
                             android:layout_height="30dp"
                             android:layout_marginLeft="10dp"
                             android:gravity="bottom"
@@ -121,9 +126,42 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:text="Qty"
+                            android:layout_marginRight="0dp"
                             android:textStyle="bold">
 
                         </TextView>
+
+                       <LinearLayout
+                           android:layout_width="35dp"
+                           android:layout_height="50dp"
+                           android:orientation="vertical"
+                           >
+
+                           <Button
+                               android:layout_width="30dp"
+                               android:layout_height="25dp"
+                               android:text="+"
+                               android:textStyle="bold"
+                               android:textSize="1sp"
+                               android:textColor="@color/white"
+                               android:shadowRadius="2000">
+
+                           </Button>
+
+
+                           <Button
+                               android:layout_width="30dp"
+                               android:layout_height="25dp"
+                               android:text="-"
+                               android:textStyle="bold"
+                               android:textSize="1sp"
+                               android:layout_marginTop="0dp">
+
+                           </Button>
+
+
+
+                       </LinearLayout>
 
                         <EditText
                             android:layout_width="60dp"
@@ -135,11 +173,12 @@
 
                         <Button
                             android:id="@+id/btn"
-                            android:layout_width="70dp"
+                            android:layout_width="73dp"
                             android:layout_height="50dp"
                             android:layout_marginBottom="20dp"
                             android:text="buy"
-                            android:backgroundTint="#FF5722"></Button>
+                            android:layout_marginLeft="10dp"
+                            android:backgroundTint="#A4FF5722"></Button>
 
 
                     </LinearLayout>
@@ -148,8 +187,8 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="110dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:layout_marginTop="10dp"
                     app:cardCornerRadius="20sp"
                     app:cardBackgroundColor="@color/teal_200">
@@ -160,22 +199,23 @@
 
                         <Button
                             android:id="@+id/cart2"
-                            android:layout_width="70dp"
-                            android:layout_height="35dp"
-                            android:layout_marginLeft="220dp"
+                            android:layout_width="73dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="225dp"
                             android:layout_marginRight="50dp"
-                            android:background="@color/black"
+                            android:layout_marginTop="0dp"
+                            android:backgroundTint="#C13045B8"
                             android:text="Cart"></Button>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="52dp"
-                        android:layout_marginTop="55dp"
+                        android:layout_marginTop="50dp"
                         android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="120dp"
+                            android:layout_width="80dp"
                             android:layout_height="30dp"
                             android:layout_marginLeft="10dp"
                             android:gravity="bottom"
@@ -189,9 +229,42 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:text="Qty"
+                            android:layout_marginRight="0dp"
                             android:textStyle="bold">
 
                         </TextView>
+                        <LinearLayout
+                            android:layout_width="35dp"
+                            android:layout_height="50dp"
+                            android:orientation="vertical"
+                            >
+
+                            <Button
+                                android:layout_width="30dp"
+                                android:layout_height="25dp"
+                                android:text="+"
+                                android:textStyle="bold"
+                                android:textSize="1sp"
+                                android:textColor="@color/white"
+                                android:shadowRadius="2000">
+
+                            </Button>
+
+
+                            <Button
+                                android:layout_width="30dp"
+                                android:layout_height="25dp"
+                                android:text="-"
+                                android:textStyle="bold"
+                                android:textSize="1sp"
+                                android:layout_marginTop="0dp">
+
+                            </Button>
+
+
+
+                        </LinearLayout>
+
 
                         <EditText
                             android:layout_width="60dp"
@@ -203,11 +276,12 @@
 
                         <Button
                             android:id="@+id/btn2"
-                            android:layout_width="70dp"
+                            android:layout_width="73dp"
                             android:layout_height="50dp"
                             android:layout_marginBottom="10dp"
                             android:text="buy"
-                            android:backgroundTint="#FF5722"></Button>
+                            android:layout_marginLeft="10dp"
+                            android:backgroundTint="#A4FF5722"></Button>
 
 
                     </LinearLayout>
@@ -217,8 +291,8 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="110dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     app:cardCornerRadius="20sp"
                     android:layout_marginTop="10dp"
                     app:cardBackgroundColor="@color/teal_200">
@@ -231,19 +305,20 @@
                             android:id="@+id/cart3"
                             android:layout_width="73dp"
                             android:layout_height="50dp"
-                            android:layout_marginLeft="220dp"
+                            android:layout_marginLeft="225dp"
                             android:layout_marginRight="50dp"
+                            android:backgroundTint="#C13045B8"
                             android:text="Cart"></Button>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="52dp"
-                        android:layout_marginTop="60dp"
+                        android:layout_marginTop="50dp"
                         android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="120dp"
+                            android:layout_width="80dp"
                             android:layout_height="30dp"
                             android:layout_marginLeft="10dp"
                             android:gravity="bottom"
@@ -260,6 +335,39 @@
                             android:textStyle="bold">
 
                         </TextView>
+                        <LinearLayout
+                            android:layout_width="35dp"
+                            android:layout_height="50dp"
+                            android:orientation="vertical"
+                            >
+
+                            <Button
+                                android:layout_width="30dp"
+                                android:layout_height="25dp"
+                                android:text="+"
+                                android:textStyle="bold"
+                                android:textSize="1sp"
+                                android:textColor="@color/white"
+                                android:shadowRadius="2000">
+
+                            </Button>
+
+
+                            <Button
+                                android:layout_width="30dp"
+                                android:layout_height="25dp"
+                                android:text="-"
+                                android:textStyle="bold"
+                                android:textSize="1sp"
+                                android:backgroundTint="#DAA1A39C"
+                                android:layout_marginTop="0dp">
+
+                            </Button>
+
+
+
+                        </LinearLayout>
+
 
                         <EditText
                             android:layout_width="60dp"
@@ -271,11 +379,12 @@
 
                         <Button
                             android:id="@+id/btn3"
-                            android:layout_width="70dp"
+                            android:layout_width="73dp"
                             android:layout_height="50dp"
                             android:layout_marginBottom="10dp"
                             android:text="buy"
-                            android:backgroundTint="#FF5722"></Button>
+                            android:layout_marginLeft="10dp"
+                            android:backgroundTint="#A4FF5722"></Button>
 
 
                     </LinearLayout>
