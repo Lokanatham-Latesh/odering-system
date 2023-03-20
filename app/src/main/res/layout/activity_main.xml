@@ -116,7 +116,7 @@
                             android:layout_height="30dp"
                             android:layout_marginLeft="10dp"
                             android:gravity="bottom"
-                            android:text="$ 100.00"
+                            android:text="Rs 100.00"
                             android:textSize="40px"
                             android:textStyle="bold">
 
@@ -219,7 +219,7 @@
                             android:layout_height="30dp"
                             android:layout_marginLeft="10dp"
                             android:gravity="bottom"
-                            android:text="$ 100.00"
+                            android:text="Rs 100.00"
                             android:textSize="40px"
                             android:textStyle="bold">
 
@@ -322,7 +322,7 @@
                             android:layout_height="30dp"
                             android:layout_marginLeft="10dp"
                             android:gravity="bottom"
-                            android:text="$ 100.00"
+                            android:text="Rs 100.00"
                             android:textSize="40px"
                             android:textStyle="bold">
 
