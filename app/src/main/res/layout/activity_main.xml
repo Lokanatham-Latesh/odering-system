@@ -28,6 +28,7 @@
             android:layout_height="50dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
+            android:requiresFadingEdge="horizontal"
             android:background="@color/white"></SearchView>
 
         <LinearLayout
@@ -35,33 +36,100 @@
             android:layout_height="150dp"
             android:layout_marginTop="20dp"
             android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="75dp"
-                android:layout_height="90dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="40dp"
-                android:src="@drawable/food1">
-
-            </ImageView>
-
-            <ImageView
-                android:layout_width="75dp"
-                android:layout_height="90dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="40dp"
-                android:src="@drawable/food2">
-
-            </ImageView>
-
-            <ImageView
-                android:layout_width="70dp"
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
                 android:layout_height="80dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="40dp"
-                android:src="@drawable/juicie">
 
-            </ImageView>
+                app:cardCornerRadius="20dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                app:cardElevation="@dimen/cardview_default_radius"
+
+                >
+                <LinearLayout
+                    android:layout_width = "90dp"
+                    android:layout_height="70dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#EDECE8E8"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_baseline_fastfood_24">
+
+                    </ImageView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+
+                app:cardCornerRadius="20dp"
+                android:layout_margin="10dp"
+                app:cardElevation="@dimen/cardview_default_radius"
+                android:backgroundTint="@color/white"
+                >
+                <LinearLayout
+                    android:layout_width = "90dp"
+                    android:layout_height="70dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#EDECE8E8"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_baseline_local_drink_24">
+
+                    </ImageView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+
+                app:cardCornerRadius="20dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                app:cardElevation="@dimen/cardview_default_radius"
+                >
+                <LinearLayout
+                    android:layout_width = "90dp"
+                    android:layout_height="70dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#EDECE8E8"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_baseline_free_breakfast_24">
+
+                    </ImageView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
         </LinearLayout>
 
         <TextView
@@ -89,7 +157,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     app:cardCornerRadius="20sp"
-                    app:cardBackgroundColor="@color/teal_200">
+                    app:cardBackgroundColor="#F013D6C3">
 
                     <LinearLayout
                         android:layout_width="400dp"
@@ -191,7 +259,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_marginTop="10dp"
                     app:cardCornerRadius="20sp"
-                    app:cardBackgroundColor="@color/teal_200">
+                    app:cardBackgroundColor="#F203DAC5">
 
                     <LinearLayout
                         android:layout_width="400dp"
@@ -295,7 +363,7 @@
                     android:layout_marginRight="10dp"
                     app:cardCornerRadius="20sp"
                     android:layout_marginTop="10dp"
-                    app:cardBackgroundColor="@color/teal_200">
+                    app:cardBackgroundColor="#ED03DAC5">
 
                     <LinearLayout
                         android:layout_width="400dp"
@@ -329,7 +397,7 @@
                         </TextView>
 
                         <TextView
-                            android:layout_width="30dp"
+                            android:layout_width="34dp"
                             android:layout_height="30dp"
                             android:text="Qty"
                             android:textStyle="bold">
@@ -338,6 +406,7 @@
                         <LinearLayout
                             android:layout_width="35dp"
                             android:layout_height="50dp"
+
                             android:orientation="vertical"
                             >
 
@@ -347,7 +416,7 @@
                                 android:text="+"
                                 android:textStyle="bold"
                                 android:textSize="1sp"
-                                android:textColor="@color/white"
+                                android:textColor="#F44336"
                                 android:shadowRadius="2000">
 
                             </Button>
@@ -359,7 +428,7 @@
                                 android:text="-"
                                 android:textStyle="bold"
                                 android:textSize="1sp"
-                                android:backgroundTint="#DAA1A39C"
+                                android:backgroundTint="#920C3BB6"
                                 android:layout_marginTop="0dp">
 
                             </Button>
@@ -390,6 +459,318 @@
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="20sp"
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="#EE03DAC5">
+
+                    <LinearLayout
+                        android:layout_width="400dp"
+                        android:layout_height="60dp">
+
+                        <Button
+                            android:id="@+id/cart4"
+                            android:layout_width="73dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="225dp"
+                            android:layout_marginRight="50dp"
+                            android:backgroundTint="#C13045B8"
+                            android:text="Cart"></Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_marginTop="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="bottom"
+                            android:text="Rs 100.00"
+                            android:textSize="40px"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="34dp"
+                            android:layout_height="30dp"
+                            android:text="Qty"
+                            android:textStyle="bold">
+
+                        </TextView>
+                        <LinearLayout
+                            android:layout_width="35dp"
+                            android:layout_height="50dp"
+
+                            android:orientation="vertical"
+                            >
+
+                            <Button
+                                android:layout_width="30dp"
+                                android:layout_height="25dp"
+                                android:text="+"
+                                android:textStyle="bold"
+                                android:textSize="1sp"
+                                android:textColor="#F44336"
+                                android:shadowRadius="2000">
+
+                            </Button>
+
+
+                            <Button
+                                android:layout_width="30dp"
+                                android:layout_height="25dp"
+                                android:text="-"
+                                android:textStyle="bold"
+                                android:textSize="1sp"
+                                android:backgroundTint="#920C3BB6"
+                                android:layout_marginTop="0dp">
+
+                            </Button>
+
+
+
+                        </LinearLayout>
+
+
+                        <EditText
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:hint="enter"
+                            android:inputType="number">
+
+                        </EditText>
+
+                        <Button
+                            android:id="@+id/btn4"
+                            android:layout_width="73dp"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="buy"
+                            android:layout_marginLeft="10dp"
+                            android:backgroundTint="#A4FF5722"></Button>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="20sp"
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="#ED03DAC5">
+
+                    <LinearLayout
+                        android:layout_width="400dp"
+                        android:layout_height="60dp">
+
+                        <Button
+                            android:id="@+id/cart5"
+                            android:layout_width="73dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="225dp"
+                            android:layout_marginRight="50dp"
+                            android:backgroundTint="#C13045B8"
+                            android:text="Cart"></Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_marginTop="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="bottom"
+                            android:text="Rs 100.00"
+                            android:textSize="40px"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="34dp"
+                            android:layout_height="30dp"
+                            android:text="Qty"
+                            android:textStyle="bold">
+
+                        </TextView>
+                        <LinearLayout
+                            android:layout_width="35dp"
+                            android:layout_height="50dp"
+
+                            android:orientation="vertical"
+                            >
+
+                            <Button
+                                android:layout_width="30dp"
+                                android:layout_height="25dp"
+                                android:text="+"
+                                android:textStyle="bold"
+                                android:textSize="1sp"
+                                android:textColor="#F44336"
+                                android:shadowRadius="2000">
+
+                            </Button>
+
+
+                            <Button
+                                android:layout_width="30dp"
+                                android:layout_height="25dp"
+                                android:text="-"
+                                android:textStyle="bold"
+                                android:textSize="1sp"
+                                android:backgroundTint="#920C3BB6"
+                                android:layout_marginTop="0dp">
+
+                            </Button>
+
+
+
+                        </LinearLayout>
+
+
+                        <EditText
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:hint="enter"
+                            android:inputType="number">
+
+                        </EditText>
+
+                        <Button
+                            android:id="@+id/btn5"
+                            android:layout_width="73dp"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="buy"
+                            android:layout_marginLeft="10dp"
+                            android:backgroundTint="#A4FF5722"></Button>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="20sp"
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="#ED03DAC5">
+
+                    <LinearLayout
+                        android:layout_width="400dp"
+                        android:layout_height="60dp">
+
+                        <Button
+                            android:id="@+id/cart6"
+                            android:layout_width="73dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="225dp"
+                            android:layout_marginRight="50dp"
+                            android:backgroundTint="#C13045B8"
+                            android:text="Cart"></Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_marginTop="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="bottom"
+                            android:text="Rs 100.00"
+                            android:textSize="40px"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="34dp"
+                            android:layout_height="30dp"
+                            android:text="Qty"
+                            android:textStyle="bold">
+
+                        </TextView>
+                        <LinearLayout
+                            android:layout_width="35dp"
+                            android:layout_height="50dp"
+
+                            android:orientation="vertical"
+                            >
+
+                            <Button
+                                android:layout_width="30dp"
+                                android:layout_height="25dp"
+                                android:text="+"
+                                android:textStyle="bold"
+                                android:textSize="1sp"
+                                android:textColor="#F44336"
+                                android:shadowRadius="2000">
+
+                            </Button>
+
+
+                            <Button
+                                android:layout_width="30dp"
+                                android:layout_height="25dp"
+                                android:text="-"
+                                android:textStyle="bold"
+                                android:textSize="1sp"
+                                android:backgroundTint="#920C3BB6"
+                                android:layout_marginTop="0dp">
+
+                            </Button>
+
+
+
+                        </LinearLayout>
+
+
+                        <EditText
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:hint="enter"
+                            android:inputType="number">
+
+                        </EditText>
+
+                        <Button
+                            android:id="@+id/btn6"
+                            android:layout_width="73dp"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="buy"
+                            android:layout_marginLeft="10dp"
+                            android:backgroundTint="#A4FF5722"></Button>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
 
 
 
